@@ -1,0 +1,13 @@
+---
+http:
+  cors:
+    headers: "*"
+    methods: "GET, POST, OPTIONS, PUT, DELETE"
+    origins: "localhost"
+  timeouts:
+    read: 30s
+    write: 30s
+    idle: 60s
+    shutdown: 15s
+logger:
+  level: debug
