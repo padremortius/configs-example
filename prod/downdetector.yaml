@@ -1,0 +1,14 @@
+---
+tasks:
+  - name: Check status ports
+    cron: 0 0/2 * ? * * *
+    disabled: false
+  - name: Check web scanner
+    cron: 0 0/30 0 ? * * *
+    disabled: true
+portScanner:
+  n2350: { hosts: ['prod-srv.lan'], ports: ['tcp/80', 'tcp/22'], description: 'prod-srv.lan' }
+  mikrotik: { hosts: ['192.168.1.1'], ports: ['tcp/80'], description: 'router'}
+webScanner:
+  n2350-web: { urls: ['http://prod-srv.lan/admin/login/?next=%2F'], description: 'prod-srv.lan web' }
+     

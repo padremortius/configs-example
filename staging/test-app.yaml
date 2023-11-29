@@ -1,0 +1,6 @@
+---
+http:
+  cors:
+    headers: "*"
+    methods: "GET, POST, OPTIONS"
+    origins: "stage-srv.lan"
