@@ -10,4 +10,4 @@ http:
     idle: 60s
     shutdown: 15s
 logger:
-  level: debug
+  level: error

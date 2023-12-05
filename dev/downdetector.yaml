@@ -9,6 +9,6 @@ tasks:
 portScanner:
   n2350: { hosts: ['dev-srv.lan'], ports: ['tcp/80', 'tcp/22'], description: 'dev-srv.lan' }
   mikrotik: { hosts: ['192.168.1.1'], ports: ['tcp/80'], description: 'router'}
+profileName: ""
 webScanner:
   n2350-web: { urls: ['http://dev-srv.lan/admin/login/?next=%2F'], description: 'dev-srv.lan web' }
-     
