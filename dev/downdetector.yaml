@@ -1,4 +1,6 @@
 ---
+app:
+  option: test
 tasks:
   - name: Check status ports
     cron: 0 0/2 * ? * * *
