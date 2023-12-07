@@ -1,6 +1,6 @@
 ---
 app:
-  option: t6
+  option: t7
 tasks:
   - name: Check status ports
     cron: 0 0/2 * ? * * *
