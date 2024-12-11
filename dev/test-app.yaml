@@ -3,7 +3,7 @@ http:
   cors:
     headers: "*"
     methods: "GET, POST, OPTIONS, PUT, DELETE"
-    origins: "localhost"
+    origins: "localhost,127.0.0.1"
   timeouts:
     read: 30s
     write: 30s
